@@ -39,7 +39,7 @@ jobs:
         run: npm install -g surge
        
       - name: deploying on surge
-        run: surge ./build false-temper.surge.sh/  --token ${{secret.SECRET}}
+        run: surge ./build false-temper.surge.sh/  --token ${{secret.SURGE_TOKEN}}
       
           
     
