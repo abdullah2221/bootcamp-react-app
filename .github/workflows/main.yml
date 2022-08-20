@@ -33,13 +33,13 @@ jobs:
           cmd: install
           
       - name: Creating build
-        run: npm build 
+        run: npm run build 
           
       - name: installing surge
         run: npm install -g surge
        
       - name: deploying on surge
-        run: surge ./build false-temper.surge.sh/  --token ${{secret.SECRET}}
+        run: surge ./build false-temper.surge.sh/  --token ${{secret.SURGE_TOKEN}}
       
           
     
